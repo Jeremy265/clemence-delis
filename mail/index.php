@@ -118,7 +118,7 @@ function sendMailClemenceOrThrow($parameters)
         !sendMail(
             array(
                 'to' => 'clemence@psy-delis.fr',
-                'from' => "{$parameters['name']}<{$parameters["mail"]}>",
+                'from' => 'clemence@psy-delis.fr',
                 'subject' => 'Contact depuis psy-delis.fr',
                 'content' => getMailTemplateClemence($parameters)
             )
