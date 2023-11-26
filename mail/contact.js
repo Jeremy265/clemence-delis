@@ -2,9 +2,9 @@ $(function () {
 
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
-        submitError: function ($form, event, errors) {
+        submitError: function () {
         },
-        submitSuccess: function ($form, event) {
+        submitSuccess: function (_, event) {
             event.preventDefault();
             const firstName = $("input#firstName").val();
             const lastName = $("input#lastName").val();
@@ -17,12 +17,12 @@ $(function () {
             $("#feedback").html("");
 
             $.ajax({
-                url: "mail/contact.php",
+                url: "mail/index.php",
                 type: "POST",
                 data: {
                     firstName: firstName,
                     lastName: lastName,
-                    email: email,
+                    mail: email,
                     number: number,
                     subject: subject,
                     message: message
