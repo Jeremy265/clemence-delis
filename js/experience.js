@@ -34,6 +34,8 @@ class Experience {
 
 
 const experiences = [
+    new Experience("Depuis 2022", "Psychologue clinicienne du travail", "Loire", []),
+    new Experience("2019-2022", "Coaching professionnel auprès de demandeurs d’emploi", "Lyon", []),
     new Experience("Depuis 2019", "Psychologue clinicienne du travail consultante indépendante", "Lyon", [
         "Conseil et accompagnement des encadrants",
         "Animation de groupe d’analyse de la pratique",
